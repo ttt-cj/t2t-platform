@@ -1,7 +1,3 @@
-Create a complete website and pages for the website described below. Change the text and regenerate the text as descriptive for the website. Use a modern CSS theme for the website. Use the following color scheme for the website: https://coolors.co/5aa9e6-7fc8f8-f9f9f9-ffe45e-ff6392. Use the following font for the website: https://fonts.google.com/specimen/Roboto. Use the following icons for the website: https://fontawesome.com/icons?d=gallery. Use the following images for the website: https://unsplash.com/s/photos/tech-computer-projects. Use t
-
----
-
 # Overview
 TRACE Theory to Trace (T2T) is a platform which connects students who look for real world IT projects with companies looking to solve their IT problems. The platform is designed to be a win-win situation for both students and companies. Students get to work on real world projects and gain experience while companies get to solve their IT problems at a low cost. 
 
