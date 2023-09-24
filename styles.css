@@ -21,6 +21,7 @@ body {
     align-items: center;
     margin: 2rem auto; /* change margin to auto */
     max-width: 1200px; /* add max-width */
+    padding: 20px;
 }
 
 .description-text-container {
@@ -174,7 +175,56 @@ body {
         font-size: .5rem;
         padding: 0.5rem 1rem;
     }
-}.header-buttons-container {
+
+    .benefit {
+        max-width: 100%;
+    }
+
+    .benefit-text-container {
+        padding: 1rem;
+    }
+
+    .benefit h2 {
+        font-size: 1.5rem;
+    }
+
+    .benefit li {
+        font-size: 1rem;
+    }
+
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .project-goal {
+        font-size: 1rem;
+    }
+
+    .project-requirements,
+    .project-deadline {
+        font-size: 0.8rem;
+    }
+
+    .view-all-projects {
+        font-size: 1rem;
+    }
+}
+
+.header-buttons-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -210,53 +260,40 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: #0077ff;
 }
-
-/* Navbar section */
-
+/* Style for navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: rgba(11, 19, 43, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.navbar-logo {
-    font-size: 2rem;
-    color: #ffffff;
-}
-
-.navbar-logo a {
-    text-decoration: none;
-    color: #ffffff;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
-.navbar-links {
+  
+  .navbar-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077ff;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.navbar-links a {
-    margin-left: 1rem;
-    font-size: 1.1rem;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.navbar-links a:hover {
-    color: #5bc0be;
-}
-
-.navbar-links a.active {
-    color: #5bc0be; /* Change color to indicate active link */
-    font-weight: bold; /* Add bold font weight to indicate active link */
   }
+  
+  .navbar-links a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .navbar-links a.active {
+    color: #0077ff;
+  }
+  
 /* Projects section */
 
 .projects-section {
