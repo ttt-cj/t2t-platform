@@ -13,7 +13,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.add-project-form  {
+.add-project-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -53,7 +53,6 @@
   margin: 0;
 }
 
-
 .add-project-form .submit-button {
   background-color: #0077ff;
   color: #fff;
@@ -81,10 +80,16 @@
   max-height: 300px; /* add max-height */
 }
 
+.hidden-section {
+  display: none;
+  align-content: center;
+  text-align: center;
+  color: #005ae6;
+}
 
 /* Responsive design */
 @media screen and (min-width: 768px) {
-  .add-project-form  {
+  .add-project-form {
     margin-top: 0px;
   }
 

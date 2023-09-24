@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Project List</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -51,130 +53,10 @@
     <section class="projects">
       <!-- Project list -->
     <ul class="project-list">
-        <!-- Project list item -->
-        <li class="project-list-item">
-            <!-- Project title -->
-            <div class="project-title">Mobile App Development</div>
-
-            <!-- Project details -->
-            <div class="project-details">
-                <div>
-                    <span><i class="fas fa-building"></i>&nbsp; Company:</span>
-                    <p>XYZ Tech</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-bullseye"></i>&nbsp; Goal:</span>
-                    <p>To develop a mobile app for managing tasks and appointments</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-tasks"></i>&nbsp; Tasks:</span>
-                    <p>Design and develop app, integrate with calendar and task management APIs, implement push notifications</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-code"></i>&nbsp; Technology Stack:</span>
-                    <p>React Native, Node.js, MongoDB</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-users"></i>&nbsp; Minimum Team:</span>
-                    <p>2</p>
-                </div>
-                <div>
-                    <span><i class="far fa-calendar-alt"></i>&nbsp; Date Added:</span>
-                    <p>2022-08-31</p>
-                </div>
-                <div>
-                    <span><i class="far fa-clock"></i>&nbsp; Duration:</span>
-                    <p>3 months</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-link"></i>&nbsp; Detail Link:</span>
-                    <p><a href="https://example.com">View</a></p>
-                </div>
-            </div>
-
-            <!-- Bid button -->
-            <button class="header-button">Apply for the project</button>
-        </li>
-
-        <!-- Other project list items -->
-        
-        <!-- Project list item -->
-        <li class="project-list-item">
-            <!-- Project title -->
-            <div class="project-title">Data Analysis Tool</div>
-
-            <!-- Project details -->
-            <div class="project-details">
-                <div>
-                    <span><i class="fas fa-building"></i>&nbsp; Company:</span>
-                    <p>ABC Analytics</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-bullseye"></i>&nbsp; Goal:</span>
-                    <p>To develop a data analysis tool for processing large datasets</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-tasks"></i>&nbsp; Tasks:</span>
-                    <p>Design and develop tool, integrate with data processing libraries, implement data visualization features</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-code"></i>&nbsp; Technology Stack:</span>
-                    <p>Python, Pandas, NumPy, Matplotlib</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-users"></i>&nbsp; Minimum Team:</span>
-                    <p>4</p>
-                </div>
-                <div>
-                    <span><i class="far fa-calendar-alt"></i>&nbsp; Date Added:</span>
-                    <p>2022-10-31</p>
-                </div>                <div>
-                    <span><i class="far fa-clock"></i>&nbsp; Duration:</span>
-                    <p>3 months</p>
-                </div>
-                <div>
-                    <span><i class="fas fa-link"></i>&nbsp; Detail Link:</span>
-                    <p><a href="https://example.com">View</a></p>
-                </div>
-            </div>
-
-            <!-- Bid button -->
-            <button class="header-button">Apply for the project</button>
-        </li>
-
-        <!-- Other project list items -->
-        
+        <!-- Project list items added by JS -->
     </ul>
     </section>
-
-    <script>
-      // Get search bar element
-      var searchBar = document.getElementById("search-bar");
-
-      // Add event listener for search bar
-      searchBar.addEventListener("keyup", function () {
-        // Get search query
-        var query = searchBar.value.toLowerCase();
-
-        // Get project list items
-        var projectListItems =
-          document.getElementsByClassName("project-list-item");
-
-        // Loop through project list items
-        for (var i = 0; i < projectListItems.length; i++) {
-          // Get project text content
-          var projectText = projectListItems[i].textContent.toLowerCase();
-
-          // Check if project text content contains search query
-          if (projectText.indexOf(query) > -1) {
-            // Show project list item
-            projectListItems[i].style.display = "";
-          } else {
-            // Hide project list item
-            projectListItems[i].style.display = "none";
-          }
-        }
-      });
-    </script>
+    <script src="js/projects-fetch.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
