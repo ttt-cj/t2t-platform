@@ -18,6 +18,7 @@ We should operate with the MVP until we see a need for more features. Learn from
 Next immediate steps:
  - Create a TRACE Github account and folk the repo
  - Create a google account and share the spreadsheets/AppScript project with the account
+ - Host the site under t2t.trace.lk
  - Add a open source licencing to the repo (MIT licensing)
  - Complete the MVP
 
