@@ -1,7 +1,7 @@
 const projectList = document.querySelector('.project-list');
 
 // Make HTTP GET request to retrieve project data
-fetch('https://script.google.com/macros/s/AKfycbz3B7T_MbVn8-ouQaieSRQ3jeSfGxajJ6nqRdw_zMxXFCBgMTQPmp9UvNzOF6uQEpsq/exec?action=get-projects')
+fetch('https://script.google.com/macros/s/AKfycbxHnOPpkeuMWRqZvcHJSCIYt0XCyU3d88K-DaTtByh_fC1y5GqY0PSH4qx8quvMPpAs/exec?action=get-projects')
   .then(response => response.json())
   .then(data => {
     projectList.innerHTML = '';
