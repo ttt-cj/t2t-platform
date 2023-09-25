@@ -4,6 +4,7 @@ const projectList = document.querySelector('.project-list');
 fetch('https://script.google.com/macros/s/AKfycbz3B7T_MbVn8-ouQaieSRQ3jeSfGxajJ6nqRdw_zMxXFCBgMTQPmp9UvNzOF6uQEpsq/exec?action=get-projects')
   .then(response => response.json())
   .then(data => {
+    projectList.innerHTML = '';
     // Loop through each project and create a list item
     data.records.forEach(project => {
       const listItem = document.createElement('li');

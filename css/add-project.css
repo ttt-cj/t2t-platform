@@ -87,6 +87,10 @@
   color: #005ae6;
 }
 
+.loading-dots {
+  display: none;
+}
+
 /* Responsive design */
 @media screen and (min-width: 768px) {
   .add-project-form {

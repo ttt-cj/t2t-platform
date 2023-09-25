@@ -1,12 +1,15 @@
 const form = document.querySelector(".add-project-form");
 const hiddenSection = document.querySelector(".hidden-section");
 const submitButton = form.querySelector(".submit-button");
+const loadingMessage = document.querySelector(".loading-dots");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-    // Disable submit button
-    submitButton.disabled = true;
+  // Disable submit button
+  submitButton.disabled = true;
+  loadingMessage.style.display = "block";
+
   // Get form data
   const formData = new FormData(form);
 
@@ -37,5 +40,7 @@ form.addEventListener("submit", (event) => {
     .finally(() => {
       // Re-enable submit button
       submitButton.disabled = false;
+      loadingMessage.style.display = "none";
+      form.reset();
     });
 });
