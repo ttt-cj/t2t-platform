@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
 
   // Make HTTP POST request to save project
   fetch(
-    "https://script.google.com/macros/s/AKfycbxHnOPpkeuMWRqZvcHJSCIYt0XCyU3d88K-DaTtByh_fC1y5GqY0PSH4qx8quvMPpAs/exec?action=add-project",
+    API_URL + "?action=add-project",
     {
       method: "POST",
       headers: {
