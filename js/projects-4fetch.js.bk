@@ -6,11 +6,7 @@ fetch(API_URL + "?action=get-4Projects")
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-    return response.text();
-  })
-  .then((responseText) => {
-    console.log(responseText); // Log the response text
-    return JSON.parse(responseText); // Attempt to parse it as JSON
+    return response.json();
   })
   .then((data) => {
     // Check if the response contains an error message
