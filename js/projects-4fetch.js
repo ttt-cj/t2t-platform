@@ -9,9 +9,16 @@ fetch(API_URL + "?action=get-4Projects")
     return response.text();
   })
   .then((responseText) => {
-    console.log(responseText); // Log the response text
-    return JSON.parse(responseText); // Attempt to parse it as JSON
+    // Check if the response contains an error message
+    if (responseText.startsWith("Unknown Action")) {
+      console.error("Error:", responseText);
+      // Handle the error appropriately, e.g., display an error message on the page.
+    } else {
+      // Parse the response as JSON
+      const data = JSON.parse(responseText);
+    }
   })
+
   .then((data) => {
     // Check if the response contains an error message
     if (data.error) {
