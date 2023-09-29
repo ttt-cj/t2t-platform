@@ -1,4 +1,4 @@
-const projectList = document.querySelector('.project-list');
+const projectList = document.querySelector('.projects-section');
 
 // Make HTTP GET request to retrieve project data
 fetch('https://script.google.com/macros/s/AKfycbxHnOPpkeuMWRqZvcHJSCIYt0XCyU3d88K-DaTtByh_fC1y5GqY0PSH4qx8quvMPpAs/exec?action=get-4Projects')
