@@ -6,25 +6,13 @@ fetch(API_URL + "?action=get-4Projects")
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-    return response.text();
+    return response.json();
   })
-  .then((responseText) => {
-    // Check if the response contains an error message
-    if (responseText.startsWith("Unknown Action")) {
-      console.error("Error:", responseText);
-      // Handle the error appropriately, e.g., display an error message on the page.
-    } else {
-      // Parse the response as JSON
-      const data = JSON.parse(responseText);
-    }
-  })
-
   .then((data) => {
-    // Check if the response contains an error message
-    if (data.error) {
+    if (data && data.error) {
       console.error("Error:", data.error);
       // Handle the error appropriately, e.g., display an error message on the page.
-    } else {
+    } else if (data) {
       projectList.innerHTML = "";
       // Loop through each project and create a list item
       data.records.forEach((project) => {
