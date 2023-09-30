@@ -1,4 +1,4 @@
-const projectList = document.querySelector('.project-list');
+const projectList = document.querySelector('.projects');
 
 // Make HTTP GET request to retrieve project data
 fetch(API_URL + '?action=get-projects')
