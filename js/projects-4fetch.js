@@ -8,10 +8,10 @@ fetch(API_URL + '?action=get-projects')
     // Loop through each project and create a list item
     data.records.forEach(project => {
       const listItem = document.createElement('li');
-      listItem.classList.add('project-list-item');
+      listItem.classList.add('project');
 
       // Create project title
-      const title = document.createElement('div');
+      const title = document.createElement('h3');
       title.classList.add('project-title');
       title.textContent = project.Title;
       listItem.appendChild(title);
@@ -54,4 +54,4 @@ fetch(API_URL + '?action=get-projects')
     });
   })
   .catch(error => console.error(error));
-  console.log('test1');
+  console.log('test2');
