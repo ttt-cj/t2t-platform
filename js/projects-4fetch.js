@@ -1,7 +1,7 @@
 const projectList = document.querySelector(".project-list");
 
 // Make HTTP GET request to retrieve project data
-fetch(API_URL + "?action=get-projects")
+fetch(API_URL + "?action=get-4projects")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
