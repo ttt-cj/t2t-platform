@@ -58,4 +58,4 @@ fetch(API_URL + '?action=get-projects')
     });
   })
   .catch(error => console.error(error));
-  console.log('test1');
+  console.log('test2');
