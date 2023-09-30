@@ -25,7 +25,7 @@ fetch(API_URL + "?action=get-projects")
       const title = document.createElement("h3");
       title.classList.add("project-title");
       title.textContent = project.Title;
-      listItem.appendChild(project-title);
+      listItem.appendChild(title);
 
       // Create project details
       const details = document.createElement("div");
@@ -46,7 +46,7 @@ fetch(API_URL + "?action=get-projects")
         span.innerHTML = `<i class="${item.icon}"></i>&nbsp; ${item.label}:`;
         div.appendChild(span);
 
-        const value = document.createElement("div");
+        const value = document.createElement("p");
         value.innerHTML = item.value;
         div.appendChild(value);
         details.appendChild(div);
