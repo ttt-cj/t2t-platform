@@ -24,12 +24,8 @@ fetch(API_URL + '?action=get-projects')
       const detailItems = [
         { icon: 'fas fa-building', label: 'Company', value: project.Company },
         { icon: 'fas fa-bullseye', label: 'Goal', value: project.Goal },
-        { icon: 'fas fa-tasks', label: 'Tasks', value: project.Tasks },
-        { icon: 'fas fa-code', label: 'Technology', value: project.Technology },
         { icon: 'fas fa-users', label: 'Minimum Team', value: project.Minimum_Team },
-        { icon: 'far fa-calendar-alt', label: 'Date Added', value: project.Date_Added },
-        { icon: 'far fa-clock', label: 'Duration', value: project.Duration },
-        { icon: 'fas fa-link', label: 'Details Link', value: `<a href="${project.Details_Link}">View</a>` }
+        { icon: 'far fa-clock', label: 'Duration', value: project.Duration }
       ];
 
       // Loop through each detail item and create a span element
@@ -58,4 +54,4 @@ fetch(API_URL + '?action=get-projects')
     });
   })
   .catch(error => console.error(error));
-  console.log('test2');
+  console.log('test1');
