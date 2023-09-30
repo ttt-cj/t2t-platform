@@ -1,4 +1,4 @@
-const projectList = document.querySelector('.project-section');
+const projectList = document.querySelector('.project-list');
 
 // Make HTTP GET request to retrieve project data
 fetch(API_URL + '?action=get-projects')
@@ -54,4 +54,4 @@ fetch(API_URL + '?action=get-projects')
     });
   })
   .catch(error => console.error(error));
-  console.log('test1');
+  console.log('test2');
